@@ -5,10 +5,11 @@
     'author'        : "ARXILEAD",
     'website'       : "http://www.arxi.pt",
     'category'      : 'sales',
-    'version'       : '14.0.0.0.1',
+    'version'       : '14.0.0.0.2',
     'license'       : 'OPL-1',
     'depends'       : ['sale'],
     'data'          : [
-        'views/sale_order_views.xml'
+        'views/sale_order_views.xml',
+        'views/account_move_views.xml'
     ],
 }
