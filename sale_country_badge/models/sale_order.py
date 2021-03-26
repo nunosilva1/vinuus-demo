@@ -8,5 +8,6 @@ class SaleOrder(models.Model):
 
     def write(self, values):
         if values.get('state') == 'sent':
-            self.country = self.partner_id.country_id.name
+            for rec in self:
+                rec.country = rec.partner_id.country_id.name
         return super(SaleOrder, self).write(values)
